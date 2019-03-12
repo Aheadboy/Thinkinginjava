@@ -21,7 +21,7 @@ class RoundGlyph extends Glyph {
   void draw() {
     print("RoundGlyph.draw(), radius = " + radius);
   }
-}	
+}
 
 public class PolyConstructors {
   public static void main(String[] args) {

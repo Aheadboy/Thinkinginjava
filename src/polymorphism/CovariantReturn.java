@@ -1,4 +1,4 @@
-//: polymorphism/CovariantReturn.java
+package polymorphism;//: polymorphism/CovariantReturn.java
 
 class Grain {
   public String toString() { return "Grain"; }
@@ -21,6 +21,7 @@ public class CovariantReturn {
     Mill m = new Mill();
     Grain g = m.process();
     System.out.println(g);
+    //
     m = new WheatMill();
     g = m.process();
     System.out.println(g);
@@ -29,3 +30,5 @@ public class CovariantReturn {
 Grain
 Wheat
 *///:~
+
+//协变返回类型运行返回更加具体的类型。在java5之后加入。
