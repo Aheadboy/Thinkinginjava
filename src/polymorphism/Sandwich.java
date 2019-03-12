@@ -29,9 +29,9 @@ class PortableLunch extends Lunch {
 
 public class Sandwich extends PortableLunch {
   private Bread b = new Bread();
-  private Cheese c = new Cheese();
-  private Lettuce l = new Lettuce();
   public Sandwich() { print("Sandwich()"); }
+  private Lettuce l = new Lettuce();
+  private Cheese c = new Cheese();
   public static void main(String[] args) {
     new Sandwich();
   }
