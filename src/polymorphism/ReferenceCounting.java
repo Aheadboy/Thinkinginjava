@@ -1,7 +1,7 @@
-//: polymorphism/ReferenceCounting.java
+package polymorphism;//: polymorphism/ReferenceCounting.java
 // Cleaning up shared member objects.
 import static net.mindview.util.Print.*;
-
+//还是对象清理的例子
 class Shared {
   private int refcount = 0;
   private static long counter = 0;
