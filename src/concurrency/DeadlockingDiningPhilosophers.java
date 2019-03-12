@@ -16,7 +16,7 @@ public class DeadlockingDiningPhilosophers {
 		ExecutorService exec = Executors.newCachedThreadPool();
 		Chopstick[] sticks = new Chopstick[size];// 初始化数组
 		for(int i = 0; i < size; i++)
-			sticks[i] = new Chopstick();// 记住：初始化数组之后还要初始化元素
+			sticks[i] = new Chopstick(0);// 记住：初始化数组之后还要初始化元素///ljj1这里的参数0是我随便加的，为了通过编译
 		for(int i = 0; i < size; i++)
 			exec.execute(new Philosopher(
 					sticks[i], sticks[(i+1) % size], i, ponder));
