@@ -1,4 +1,4 @@
-//: polymorphism/StaticPolymorphism.java
+package polymorphism;//: polymorphism/StaticPolymorphism.java
 // Static methods are not polymorphic.
 
 class StaticSuper {
@@ -26,6 +26,6 @@ public class StaticPolymorphism {
     System.out.println(sup.dynamicGet());
   }
 } /* Output:
-Base staticGet()
+Base staticGet()//静态方法也不具有多态特征
 Derived dynamicGet()
 *///:~
