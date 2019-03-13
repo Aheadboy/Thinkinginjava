@@ -1,4 +1,4 @@
-//: polymorphism/RTTI.java
+package polymorphism;//: polymorphism/RTTI.java
 // Downcasting & Runtime type information (RTTI).
 // {ThrowsException}
 
@@ -26,6 +26,6 @@ public class RTTI {
     // Compile time: method not found in Useful:
     //! x[1].u();
     ((MoreUseful)x[1]).u(); // Downcast/RTTI
-    ((MoreUseful)x[0]).u(); // Exception thrown
+    ((MoreUseful)x[0]).u(); // Exception thrown//强转失败。
   }
 } ///:~
