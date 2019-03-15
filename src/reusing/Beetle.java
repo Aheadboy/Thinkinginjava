@@ -6,7 +6,7 @@ package reusing;//: reusing/Beetle.java
 import static net.mindview.util.Print.*;
 
 class Insect {
-    private static int x1 = printInit("static Insect.x1 initialized");
+    private static int x1 = printInit("static Insect.x1 initialized");//47
     protected int j;
     private int i = 9;
 
@@ -30,9 +30,9 @@ public class Beetle extends Insect {
         print("j = " + j);
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {///首先发现有加载类的必要
         print("Beetle constructor");
-        Beetle b = new Beetle();
+        Beetle b = new Beetle();//其次，发现有初始化的必要。//这里的new也有加载的必要，但是上面的static main方法已经进行了加载。就没有再加载，这里主要体现初始化的必要。
     }
 
 } /* Output:
