@@ -1,4 +1,4 @@
-//: reusing/Cartoon.java
+package reusing;//: reusing/Cartoon.java
 // Constructor calls during inheritance.
 import static net.mindview.util.Print.*;
 
@@ -20,3 +20,4 @@ Art constructor
 Drawing constructor
 Cartoon constructor
 *///:~
+//从父类开始向下初始化
