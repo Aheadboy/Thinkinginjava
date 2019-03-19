@@ -1,6 +1,7 @@
-//: reusing/Jurassic.java
+package reusing;//: reusing/Jurassic.java
 // Making an entire class final.
-
+//处于某些原因，类不能被继承。
+//final类 由于不能被继承，那么，可以认为，这个类的所有方法都是final的效果。因为根本没法取重写基类的方法
 class SmallBrain {}
 
 final class Dinosaur {
